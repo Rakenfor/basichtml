@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/master1.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css.map">
+    <title>Producto</title>
+
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button id="add" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addProduct">
+        <img src="assets/icon/add.png" alt="">
+    </button>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(120, 0, 145); position: fixed; z-index: 50; width: 100%;">
+            <a class="navbar-brand" href="#">Product</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Categorias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Cuenta
+                       </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(183, 27, 204)">
+                            <a class="dropdown-item" href="#">Configuracíon</a>
+                            <a class="dropdown-item" href="#">Salir</a>
+                            <hr>
+                        </div>
+                    </li>
+                </ul>
+                <form action="#" class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" required>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container" style="padding-top: 80px;">
+            <div class="row">
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/A310.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Drakenfor <small class="text-danger">(No activo)</small></h5>
+                        <p class="card-text">We have come to recognize that we are in a situation of increasing interdependence, and that our future is intrinsically linked to the preservation
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#A3">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="A3" tabindex="-1" role="dialog" aria-labelledby="A3" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Drakenfor</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/A310.png" class="card-img-top" alt="..." id="imgA3">
+                                            <p class="card-text"><b>Estado del producto: </b> No activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Plataforma</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-11-09</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>We have come to recognize that we are in a situation of increasing interdependence, and that our future is intrinsically linked to the preservation</p>
+                                                <hr>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/dota.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Robert <small class="text-success">(Activo)</small></h5>
+                        <p class="card-text">Hola mundo como estas espero que estes bien
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#A56">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="A56" tabindex="-1" role="dialog" aria-labelledby="A56" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Robert</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/dota.jpg" class="card-img-top" alt="..." id="imgA56">
+                                            <hr>
+                                            <p class="card-text"><b>Estado del producto: </b> Activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-12-11</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Hola mundo como estas espero que estes bien</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/asd223843588_10156497744455606_9053131882700061710_n.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Drakenfor <small class="text-danger">(No activo)</small></h5>
+                        <p class="card-text">Te estaba diciendo que hola digas hola
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#asd2">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="asd2" tabindex="-1" role="dialog" aria-labelledby="asd2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Drakenfor</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/asd223843588_10156497744455606_9053131882700061710_n.png" class="card-img-top" alt="..." id="imgasd2">
+                                            <hr>
+
+                                            <p class="card-text"><b>Estado del producto: </b> No activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-11-07</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Te estaba diciendo que hola digas hola</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/fortnite.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Drakenfor <small class="text-danger">(No activo)</small></h5>
+                        <p class="card-text">Te estaba diciendo que hola digas hola
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#asdf">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="asdf" tabindex="-1" role="dialog" aria-labelledby="asdf" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Drakenfor</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/fortnite.jpg" class="card-img-top" alt="..." id="imgasdf">
+                                            <hr>
+                                            <p class="card-text"><b>Estado del producto: </b> No activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-11-07</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Te estaba diciendo que hola digas hola</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/dota.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dota <small class="text-danger">(No activo)</small></h5>
+                        <p class="card-text">Dota 2 es uno de los pilares del género MOBA. Por no decir que es el origen de todo el género.
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#d19">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="d19" tabindex="-1" role="dialog" aria-labelledby="d19" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Dota</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/dota.jpg" class="card-img-top" alt="..." id="imgd19">
+                                            <hr>
+
+                                            <p class="card-text"><b>Estado del producto: </b> No activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Plataforma</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-05-12</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Dota 2 es uno de los pilares del género MOBA. Por no decir que es el origen de todo el género.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/asphalt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Delta <small class="text-danger">(No activo)</small></h5>
+                        <p class="card-text">Al igual que con otras etiquetas, em, además de mostrar un texto en cursiva.
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#del">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="del" tabindex="-1" role="dialog" aria-labelledby="del" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Delta</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/asphalt.jpg" class="card-img-top" alt="..." id="imgdel">
+                                            <hr>
+
+                                            <p class="card-text"><b>Estado del producto: </b> No activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-11-19</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Al igual que con otras etiquetas, em, además de mostrar un texto en cursiva.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/dnr813fda08511104e7b27d4b078b076c12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Robert <small class="text-success">(Activo)</small></h5>
+                        <p class="card-text">jkhgfd
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#dnr">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="dnr" tabindex="-1" role="dialog" aria-labelledby="dnr" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Robert</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/dnr813fda08511104e7b27d4b078b076c12.jpg" class="card-img-top" alt="..." id="imgdnr">
+                                            <hr>
+
+                                            <p class="card-text"><b>Estado del producto: </b> Activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Plataforma</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-12-12</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>jkhgfd</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/gmh14656267_10157648927430360_3989913026791198777_n.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hola <small class="text-danger">(No activo)</small></h5>
+                        <p class="card-text">Hola mundo
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#gmh">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="gmh" tabindex="-1" role="dialog" aria-labelledby="gmh" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Hola</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/gmh14656267_10157648927430360_3989913026791198777_n.png" class="card-img-top" alt="..." id="imggmh">
+                                            <hr>
+
+                                            <p class="card-text"><b>Estado del producto: </b> No activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2020-01-17</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Hola mundo</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/fortnite.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Amr <small class="text-success">(Activo)</small></h5>
+                        <p class="card-text">hola mundo
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#hapds">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="hapds" tabindex="-1" role="dialog" aria-labelledby="hapds" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Amr</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/fortnite.jpg" class="card-img-top" alt="..." id="imghapds">
+                                            <hr>
+
+                                            <p class="card-text"><b>Estado del producto: </b> Activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Shooter</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-12-13</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>hola mundo</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/hj121558969_1934238620171750_2788876095653395439_n.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Drakenfor <small class="text-danger">(No activo)</small></h5>
+                        <p class="card-text">Sospecho que el servidor web no se entera de que ese nuevo archivo existe todo lo rÃÂ¡pido que a ti te gustarÃÂ­a... comprueba la configuraciÃÂ³n de tu Apache, Nginx o lo que uses para servir contenido estÃÂ¡tico y si la actualizaciÃÂ³n
+                            es configurable
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#hj1">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="hj1" tabindex="-1" role="dialog" aria-labelledby="hj1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Drakenfor</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/hj121558969_1934238620171750_2788876095653395439_n.jpg" class="card-img-top" alt="..." id="imghj1">
+                                            <hr>
+                                            <p class="card-text"><b>Estado del producto: </b> No activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2020-01-16</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Sospecho que el servidor web no se entera de que ese nuevo archivo existe todo lo rÃÂ¡pido que a ti te gustarÃÂ­a... comprueba la configuraciÃÂ³n de tu Apache, Nginx o lo que uses para
+                                                    servir contenido estÃÂ¡tico y si la actualizaciÃÂ³n es configurable</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/dota.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Krewella <small class="text-success">(Activo)</small></h5>
+                        <p class="card-text">ñasodfjñaskdjfa adgasgag
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#jpasd">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="jpasd" tabindex="-1" role="dialog" aria-labelledby="jpasd" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Krewella</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/dota.jpg" class="card-img-top" alt="..." id="imgjpasd">
+                                            <hr>
+
+                                            <p class="card-text"><b>Estado del producto: </b> Activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Plataforma</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-11-09</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>ñasodfjñaskdjfa adgasgag</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/krew22687968_337633059979374_3645452522732962102_n.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Krewella <small class="text-danger">(No activo)</small></h5>
+                        <p class="card-text">Krewella es un dÃÂÃÂºo estadounidense de mÃÂÃÂºsica electrÃÂÃÂ³nica de Chicago formado en 2007 por las hermanas compositoras y vocalistas Jahan Yousaf y Yasmine ...
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#krew">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="krew" tabindex="-1" role="dialog" aria-labelledby="krew" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Krewella</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/krew22687968_337633059979374_3645452522732962102_n.jpg" class="card-img-top" alt="..." id="imgkrew">
+                                            <hr>
+
+                                            <p class="card-text"><b>Estado del producto: </b> No activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Plataforma</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-12-21</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Krewella es un dÃÂÃÂºo estadounidense de mÃÂÃÂºsica electrÃÂÃÂ³nica de Chicago formado en 2007 por las hermanas compositoras y vocalistas Jahan Yousaf y Yasmine ...</p>
+                                                <hr>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/m2harleyquen.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Marino <small class="text-success">(Activo)</small></h5>
+                        <p class="card-text">dfgvhb
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#m2">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="m2" tabindex="-1" role="dialog" aria-labelledby="m2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Marino</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/m2harleyquen.png" class="card-img-top" alt="..." id="imgm2">
+                                            <hr>
+                                            <p class="card-text"><b>Estado del producto: </b> Activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2020-04-03</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>dfgvhb</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/me004-busbillet-Antezana-Lima-Ayacucho-2007-02-18.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">hola <small class="text-danger">(No activo)</small></h5>
+                        <p class="card-text">dsfa
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#me">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="me" tabindex="-1" role="dialog" aria-labelledby="me" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">hola</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/me004-busbillet-Antezana-Lima-Ayacucho-2007-02-18.jpg" class="card-img-top" alt="..." id="imgme">
+                                            <hr>
+                                            <p class="card-text"><b>Estado del producto: </b> No activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2020-01-09</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>dsfa</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/mmaa16143318_447613535590122_5941226331689291272_n.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Madagascar <small class="text-success">(Activo)</small></h5>
+                        <p class="card-text">Hola mundo
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#mmaa">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="mmaa" tabindex="-1" role="dialog" aria-labelledby="mmaa" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Madagascar</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/mmaa16143318_447613535590122_5941226331689291272_n.png" class="card-img-top" alt="..." id="imgmmaa">
+                                            <hr>
+                                            <p class="card-text"><b>Estado del producto: </b> Activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Plataforma</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2020-01-18</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Hola mundo</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/musSabiasque1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Music <small class="text-success">(Activo)</small></h5>
+                        <p class="card-text">Para la mayorÃ­a de estudiantes escribir se condensa en plasmar en un papel ideas. Â¡QuÃ© tan lejanos estÃ¡n de la definiciÃ³n indicada! La escritura es un proceso.
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#mus">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="mus" tabindex="-1" role="dialog" aria-labelledby="mus" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Music</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/musSabiasque1.jpg" class="card-img-top" alt="..." id="imgmus">
+                                            <hr>
+                                            <p class="card-text"><b>Estado del producto: </b> Activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-12-12</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>Para la mayorÃ­a de estudiantes escribir se condensa en plasmar en un papel ideas. Â¡QuÃ© tan lejanos estÃ¡n de la definiciÃ³n indicada! La escritura es un proceso.
+                                                </p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/Rt22045625_328970564178957_6960036127856661131_n.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Drakenfor <small class="text-success">(Activo)</small></h5>
+                        <p class="card-text">sdfcv
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Rt">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="Rt" tabindex="-1" role="dialog" aria-labelledby="Rt" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Drakenfor</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/Rt22045625_328970564178957_6960036127856661131_n.jpg" class="card-img-top" alt="..." id="imgRt">
+                                            <hr>
+                                            <p class="card-text"><b>Estado del producto: </b> Activo
+                                                <hr>
+                                                <p class="card-text"><b>Categoría:</b> Carreras</p>
+                                                <hr>
+                                                <p class="card-text"><b>Fecha de inicio:</b> 2019-12-04</p>
+                                                <hr>
+                                                <p class="card-text"><b>Decripcion: </b>sdfcv</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a data-toggle="modal" class="btn btn-warning" href="#addProduct">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end Modal -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Modal Product-->
+    <div class="modal fade" id="addProduct" tabindex="-1" role="dialog" aria-labelledby="addProcut" aria-hidden="true">
+        <form id="formProduct" action="SaveProduct" method="post" class="was-validated" enctype="multipart/form-data">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="formTitle">Agregar Producto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-row ">
+                            <div class="form-group col-md-5">
+                                <label for="file-upload" style="width: 95%; height: 95%;">
+                                    <div class="btn btn-info card" id="cargImg"
+                                        style="width: 100%; height: 100%; border-style: dashed; border-width: 2px; border-color: blueviolet;">
+                                        <img src="assets/" class="card-img-top rounded-lg" style=" max-height: 255px;" alt=""
+                                            id="imagePreviw">
+                                        <div class="card-body" id="title">
+                                            <h1>Agregar Foto</h1>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="file" name="imgFile" id="file-upload" accept="image/*" style="display: none;" required="Seleccione foto">
+                                <input type="text" name="id" id="id" style="display: none;">
+                            </div>
+
+                            <div class="form-group col-md-7">
+                                <div class="form-group">
+                                    <label>Nombre:</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Ingrese el nombre" required name="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputState">Categoria</label>
+                                    <select id="cat" class="form-control" required name="cat">
+                                         <option value="">Seleccione una</option>
+
+                                         <option>
+                                             Carreras
+                                         </option>
+
+                                         <option>
+                                             Plataforma
+                                         </option>
+
+                                         <option>
+                                             Shooter
+                                         </option>
+
+                                     </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Fecha de inicio:</label>
+                                    <input type="date" id="date" class="form-control" id="inputPassword4" placeholder="YYYY-MM-DD" required name="date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputAddress">Descripción: </label>
+                            <textarea name="description" maxlength="450" class="form-control is-invalid" id="desc" placeholder="Ingrese la descripción" required></textarea>
+                        </div>
+
+                        <div class="row" style="margin: auto">
+                            <div class="custom-control custom-radio form-group col-md-6">
+                                <input type="radio" class="custom-control-input" value="1" id="stat1" name="state" required>
+                                <label class="custom-control-label" for="stat1">Activo</label>
+                            </div>
+                            <div class="custom-control custom-radio form-group col-md-6">
+                                <input type="radio" class="custom-control-input" value="0" id="stat2" name="state" required>
+                                <label class="custom-control-label" for="stat2">No Activo</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success" style="float: right">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <!--end modal-->
+    <script src="js/formater.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/editProduct.js"></script>
+</body>
+
+</html>

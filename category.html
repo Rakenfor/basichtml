@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/master1.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css.map">
+    <title>Categoría</title>
+</head>
+
+<body>
+
+    <!-- Button trigger modal -->
+    <button id="add" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addCategory">
+       <img src="assets/icon/add.png" alt="">
+   </button>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(120, 0, 145); position: fixed; z-index: 50; width: 100%;">
+            <a class="navbar-brand" href="#">Product</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Categorias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Cuenta
+                       </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(183, 27, 204)">
+                            <a class="dropdown-item" href="#">Configuracíon</a>
+                            <a class="dropdown-item" href="#">Salir</a>
+                        </div>
+                    </li>
+                </ul>
+                <form action="#" class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" required>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+        <!-- Modal category -->
+        <div class="modal fade" id="addCategory" tabindex="-1" role="dialog" aria-labelledby="addCategory" aria-hidden="true">
+            <form action="saveCategory" method="post" class="was-validated" id="formCategory" enctype="multipart/form-data">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Agregar Category</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-row ">
+                                <div class="form-group col-md-5">
+                                    <label for="file-upload" style="width: 95%; height: 95%;">
+                                        <div class="btn btn-info card" id="cargImg"
+                                            style="width: 100%; height: 100%; border-style: dashed; border-width: 2px; border-color: blueviolet;">
+                                            <img src="assets/" class="card-img-top rounded-lg" style=" max-height: 255px;"
+                                                alt="" id="imagePreviw">
+                                            <div class="card-body" id="title">
+                                                <h1>Agregar Foto</h1>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="file" name="imgFile" id="file-upload" accept="image/*" style="display: none;" required="Seleccione foto">
+                                    <input type="text" name="id" id="id" style="display: none;">
+                                </div>
+                                <div class="form-group col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputEmail4">Nombre:</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Ingrese el nombre" required name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword4">Código:</label>
+                                        <input type="text" class="form-control" id="cod" placeholder="Ingrese el codigo" required name="cod">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Descripción: </label>
+                                <textarea name="description" maxlength="450" class="form-control is-invalid" id="desc" placeholder="Ingrese la descripción" required></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success" style="float: right">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--end modal-->
+
+        <div class="container" style="padding-top: 80px;">
+            <div class="row">
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/racing.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Carreras</h5>
+                        <p class="card-text">Un videojuego de carreras es un videojuego en el que se imitan competencias entre vehículos. ... A pesar de que existen juegos de mesa de este tipo, el término generalmente se refiere a videojuegos.
+                        </p>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#c">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="c" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle">Carreras</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/racing.jpg" class="card-img-top" alt="...">
+                                            <hr>
+                                            <p class="card-text"><b>Decripcion: </b>Un videojuego de carreras es un videojuego en el que se imitan competencias entre vehículos. ... A pesar de que existen juegos de mesa de este tipo, el término generalmente se refiere a videojuegos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        <a data-dismiss="modal" data-toggle="modal" class="btn btn-warning" href="#addCategory" onclick="editCategory('Carreras','c','Un videojuego de carreras es un videojuego en el que se imitan competencias entre vehículos. ... A pesar de que existen juegos de mesa de este tipo, el término generalmente se refiere a videojuegos.','racing.jpg','racing.jpg')">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end modal-->
+
+
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/shoot.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Plataforma</h5>
+                        <p class="card-text">Los videojuegos de plataformas, o simplemente plataformas, son un género de videojuegos ... Este juego no solo revolucionó el género de las plataformas, sino que .... Ejemplos de juegos que volvieron
+                        </p>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#p">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="p" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle">Plataforma</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/shoot.jpg" class="card-img-top" alt="...">
+                                            <hr>
+                                            <p class="card-text"><b>Decripcion: </b>Los videojuegos de plataformas, o simplemente plataformas, son un género de videojuegos ... Este juego no solo revolucionó el género de las plataformas, sino que .... Ejemplos de juegos que
+                                                volvieron </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        <a data-dismiss="modal" data-toggle="modal" class="btn btn-warning" href="#addCategory" onclick="editCategory('Plataforma','p','Los videojuegos de plataformas, o simplemente plataformas, son un género de videojuegos ... Este juego no solo revolucionó el género de las plataformas, sino que .... Ejemplos de juegos que volvieron ','shoot.jpg','prueba.pdf')">Editar</a>
+                                        <a href="" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end modal-->
+
+
+                    </div>
+                </div>
+
+                <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-bottom: 30px; box-shadow: 10px 10px 63px -6px rgba (0,0,0,0.75);">
+                    <img src="assets/img/plat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shooter</h5>
+                        <p class="card-text">Los videojuegos de disparos o shooters son un género que engloban un amplio número de subgéneros que tienen la característica común de permitir controlar un personaje que, por norma general, dispone d
+                        </p>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#s">
+                            Mas Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" style="border-color:  rgb(120, 0, 145);" id="s" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle">Shooter</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <img src="assets/img/plat.jpg" class="card-img-top" alt="...">
+                                            <hr>
+                                            <p class="card-text"><b>Decripcion: </b>Los videojuegos de disparos o shooters son un género que engloban un amplio número de subgéneros que tienen la característica común de permitir controlar un personaje que, por norma general,
+                                                dispone d</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        <a data-dismiss="modal" data-toggle="modal" class="btn btn-warning" href="#addCategory" onclick="editCategory('Shooter','s','Los videojuegos de disparos o shooters son un género que engloban un amplio número de subgéneros que tienen la característica común de permitir controlar un personaje que, por norma general, dispone d','plat.jpg','prueba.pdf')">Editar</a>
+                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end modal-->
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="js/formater.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/editProduct.js"></script>
+</body>
+
+</html>
